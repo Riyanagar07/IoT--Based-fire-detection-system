@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.contact-card {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 28px;
+  border: 1px solid #e8ecf1;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.contact-card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transform: translateY(-2px);
+}
+
+.emergency-card {
+  border-left: 4px solid #e74c3c;
+  background-color: #fffafa;
+}
+
+.contact-card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-card-header h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.contact-label {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+  min-width: 110px;
+}
+
+.contact-value {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.emergency-value {
+  color: #e74c3c;
+  font-size: 1.1rem;
+}
+
+.contact-link {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #e74c3c;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #c0392b;
+  text-decoration: underline;
+}
+
+/* Safety Banner */
+.safety-banner {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background-color: #eafaf1;
+  border: 1px solid #2ecc71;
+  border-radius: 12px;
+  padding: 28px;
+  margin-top: 8px;
+}
+
+.safety-banner h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #27ae60;
+  margin-bottom: 6px;
+}
+
+.safety-banner p {
+  font-size: 0.9rem;
+  color: #5a6a7a;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .safety-banner {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
